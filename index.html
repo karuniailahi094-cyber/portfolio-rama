@@ -1,112 +1,41 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Advertiser Portfolio</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
-        header { background: #333; color: white; padding: 20px 0; text-align: center; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; }
-        section { padding: 60px 20px; text-align: center; }
-        .container { max-width: 1200px; margin: 0 auto; }
-        .portfolio-item { display: inline-block; width: 30%; margin: 20px 1%; background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
-        .portfolio-item img { max-width: 100%; border-radius: 8px; }
-        .cta-button { background-color: #5cb85c; color: white; padding: 15px 30px; border: none; font-size: 18px; cursor: pointer; border-radius: 5px; text-decoration: none; }
-        footer { background: #333; color: white; text-align: center; padding: 20px 0; }
-        footer a { color: white; text-decoration: none; margin: 0 10px; }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rama — BioLink</title>
+  <style>
+    :root{--bg:linear-gradient(135deg,#4e54c8,#8f94fb);--card:#ffffff;--accent:#ffcc00;--text:#111827}
+    *{box-sizing:border-box;margin:0;padding:0;font-family:Inter,Segoe UI,Arial,sans-serif}
+    body{min-height:100vh;display:flex;align-items:center;justify-content:center;background:var(--bg);padding:24px}
+    .card{width:100%;max-width:420px;background:var(--card);border-radius:16px;padding:28px;text-align:center;box-shadow:0 8px 30px rgba(2,6,23,0.2)}
+    .profile{width:120px;height:120px;border-radius:50%;overflow:hidden;margin:0 auto 16px;display:block}
+    .name{font-size:20px;font-weight:700;color:var(--text);margin-bottom:6px}
+    .role{font-size:13px;color:#6b7280;margin-bottom:18px}
+    .links{display:flex;flex-direction:column;gap:12px;margin-top:8px}
+    .links a{display:inline-block;padding:12px 16px;border-radius:12px;text-decoration:none;font-weight:600}
+    .btn-primary{background:var(--accent);color:#111;border:none}
+    .btn-secondary{background:#f3f4f6;color:var(--text);border:1px solid #e5e7eb}
+    footer{font-size:12px;color:#9ca3af;margin-top:18px}
+    @media (prefers-color-scheme:dark){:root{--card:#0b1220;--text:#e6eef8} .btn-secondary{background:#0f1724;color:#e6eef8;border-color:#1f2937}}
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Advertiser Portfolio</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#testimonials">Testimonials</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+  <main class="card" role="main">
+    <img class="profile" src="assets/profile.svg" alt="Rama profile illustration">
+    <div class="name">Rama Nurul Arifin</div>
+    <div class="role">Advertiser · Brand Manager · Social Media Specialist</div>
 
-   <section id="about">
-    <div class="container">
-        <h2>About Me</h2>
-        <img src="profile.jpg" alt="Profile Picture" style="width: 200px; border-radius: 50%;">
-        <p>Hi, I'm Rama Nurul Arifin, an Advertiser, Brand Manager, and Digital Marketing Specialist with 3 years of experience. With a passion for innovation and a wealth of knowledge in the field, my goal is to help brands grow by implementing the most effective and efficient strategies possible. I am dedicated to developing creative solutions that deliver measurable results, driving business success, and creating lasting connections with target audiences.</p>
-    </div>
-</section>
+    <nav class="links" aria-label="Biolinks">
+      <a class="btn-primary" href="https://wa.me/62XXXXXXXXXX" target="_blank" rel="noopener">📱 WhatsApp</a>
+      <a class="btn-secondary" href="https://instagram.com/username" target="_blank" rel="noopener">📷 Instagram</a>
+      <a class="btn-secondary" href="https://shopee.co.id/username" target="_blank" rel="noopener">🛒 Shopee Store</a>
+      <a class="btn-secondary" href="https://karuniailahi094-cyber.github.io/portfolio-rama/" target="_blank" rel="noopener">🌍 Portfolio</a>
+      <a class="btn-secondary" href="mailto:namaemail@example.com">✉️ Email</a>
+    </nav>
 
-    <section id="services" style="background-color: #f9f9f9;">
-        <div class="container">
-            <h2>Services</h2>
-            <div>
-                <h3>Digital Advertising</h3>
-                <p>From Google Ads to social media campaigns, I specialize in driving targeted traffic to your business.</p>
-            </div>
-            <div>
-                <h3>SEO/SEM</h3>
-                <p>Boost your website's ranking and visibility on search engines through optimized strategies.</p>
-            </div>
-            <div>
-                <h3>Social Media Marketing</h3>
-                <p>Engage your audience and grow your brand presence across platforms like Facebook, Instagram, and Twitter.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="portfolio">
-        <div class="container">
-            <h2>Portfolio</h2>
-            <div class="portfolio-item">
-                <img src="project1.jpg" alt="Project 1">
-                <h4>Project Name</h4>
-                <p>Short description of the project and the outcome. Example: Increased conversions by 30% through targeted ads.</p>
-            </div>
-            <div class="portfolio-item">
-                <img src="project2.jpg" alt="Project 2">
-                <h4>Project Name</h4>
-                <p>Short description of the project and the outcome. Example: Created successful social media campaign for brand awareness.</p>
-            </div>
-            <div class="portfolio-item">
-                <img src="project3.jpg" alt="Project 3">
-                <h4>Project Name</h4>
-                <p>Short description of the project and the outcome. Example: Developed Google Ads strategy that doubled traffic.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="testimonials" style="background-color: #f9f9f9;">
-        <div class="container">
-            <h2>Testimonials</h2>
-            <p><strong>Client Name:</strong> "Working with [Your Name] was a game-changer for our brand. The advertising strategies were spot-on and resulted in measurable growth."</p>
-            <p><strong>Client Name:</strong> "We saw an immediate impact from the campaign designed by [Your Name]. Highly recommend!"</p>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required><br><br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br><br>
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" required></textarea><br><br>
-                <button type="submit" class="cta-button">Send Message</button>
-            </form>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 [Your Name]. All rights reserved.</p>
-        <p>
-            <a href="#">LinkedIn</a> |
-            <a href="#">Twitter</a> |
-            <a href="#">Instagram</a>
-        </p>
-    </footer>
+    <footer>© 2025 Rama Nurul Arifin</footer>
+  </main>
 </body>
 </html>
